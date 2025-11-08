@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Dark Mode Switch -->
+    <Switch
+        android:id="@+id/swDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Dark Mode"
+        android:textSize="16sp"
+        android:checked="false"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Clear Data Button -->
+    <Button
+        android:id="@+id/btnClearData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear All Saved Items"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+</LinearLayout>

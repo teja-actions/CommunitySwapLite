@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <!-- Item image -->
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/item_image"
+            android:src="@drawable/ic_baseline_image_24" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/itemImage"
+            android:layout_marginStart="12dp"
+            android:text="Item Title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/itemCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemTitle"
+            android:layout_toEndOf="@id/itemImage"
+            android:layout_marginStart="12dp"
+            android:text="Category"
+            android:textSize="14sp"
+            android:textColor="#555" />
+
+        <!-- Favorite toggle -->
+        <ToggleButton
+            android:id="@+id/toggleFav"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textOn="★"
+            android:textOff="☆"
+            android:textSize="20sp"
+            android:background="@null"
+            android:padding="0dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

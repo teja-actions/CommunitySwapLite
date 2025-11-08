@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.communityhub">
+
+    <application
+        android:allowBackup="true"
+        android:label="Community Swap"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.CommunitySwap">
+
+        <activity
+            android:name=".legacyui.SettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".legacyui.AddItemActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".legacyui.ItemDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".legacyui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
